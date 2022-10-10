@@ -1,0 +1,60 @@
+{
+    "extName": {
+      "message": "Spellerizer"
+    },
+    "extDesc": {
+      "message": "Convert Register articles to UK spelling."
+    },
+    "ext_default_title": {
+      "message": "Spellerizer"
+    },
+    "onboarding_title": {
+      "message": "Spellerizer Onboarding Page"
+    },
+    "h2_heading": {
+      "message": "Spellerizer"
+    },
+    "div_explanation": {
+      "message": "An extension for Google Chrome that allows you to replace words with US spellings in The Register articles with UK spellings."
+    },
+    "li1": {
+      "message": "Pin the extension so it's always visible."
+    },
+    "li2": {
+      "message": "Read The Register as you normally would."
+    },
+    "li3": {
+      "message": "Click on the extension icon in the toolbar."
+    },
+
+    "li4": {
+      "message": "All US spellings in the built-in database will be replaced with UK spellings."
+    },
+    "li5": {
+      "message": "It may make things confusing because it doesn't consider word context."
+    },
+    "li6": {
+      "message": "For example, it will replace \"check\" with \"cheque\" even when UK English would also call for \"check.\""
+    },
+    "li7": {
+      "message": "The extension badge will show the number of words replaced, if any."
+    },
+    "li8": {
+      "message": "Reloading the page will undo any changes."
+    },
+    "button_close_msg": {
+      "message": "Ok, I get it. Close the window."
+    },
+    "options_title": {
+      "message": "Options"
+    },
+    "checkbox": {
+      "message": "World Peace (not yet implemented)"
+    }, 
+    "options_h2_heading": {
+      "message": "Your options..."
+    },
+    "options_button_close_msg": {
+      "message": "Close Window"
+    }
+}

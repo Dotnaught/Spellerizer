@@ -5,13 +5,15 @@ chrome.runtime.onInstalled.addListener((r) => {
 });
 
 function showReadme() {
-  let url = chrome.runtime.getURL("onboarding-page.html");
+  let url = chrome.runtime.getURL("html/onboarding-page.html");
   chrome.tabs.create({ url });
 }
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-  if (request.message > 0) {
+  if (request.message >= 0) {
     chrome.action.setBadgeText({ text: request.message.toString(), tabId: sender.tab.id });
+  } else {
+    chrome.action.setBadgeText({ text: "", tabId: sender.tab.id });
   }
 });
 
@@ -20,7 +22,7 @@ chrome.action.onClicked.addListener((tab) => {
     chrome.scripting.executeScript(
       {
         target: { tabId: tab.id },
-        files: ["content-script.js"],
+        files: ["js/content-script.js"],
       },
       async () => {
         if (chrome.runtime.lastError) {

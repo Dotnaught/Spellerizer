@@ -1,17 +1,18 @@
 {
-  "name": "Spellerizer",
-  "description": "Convert Register articles to UK spelling.",
+  "name": "__MSG_extName__",
+  "description": "__MSG_extDesc__",
   "version": "1.0",
   "manifest_version": 3,
-  "permissions": ["scripting", "tabs", "activeTab"],
+  "permissions": ["scripting", "tabs", "activeTab", "storage"],
+  "default_locale": "en",
   "host_permissions": ["https://theregister.com/*"],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "js/background.js"
   },
   "action": {},
   "web_accessible_resources": [
     {
-        "resources": [ "spelling_data.json" ],
+        "resources": [ "data/spelling_data.json" ],
         "matches": ["https://www.theregister.com/*"]
       }],
   "icons": {
@@ -19,5 +20,9 @@
     "32": "images/spell32.png",
     "48": "images/spell48.png",
     "128": "images/spell128.png"
+  },
+  "options_ui": {
+    "page": "html/options.html",
+    "open_in_tab": true
   }
 }

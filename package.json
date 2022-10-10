@@ -1,0 +1,19 @@
+{
+  "name": "spellerizer",
+  "version": "1.0.0",
+  "description": "Convert Register articles to UK spelling.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "zip -r dist/$npm_package_name-$npm_package_version.zip src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dotnaught/Spellerizer.git"
+  },
+  "author": "Thomas Claburn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dotnaught/Spellerizer/issues"
+  },
+  "homepage": "https://github.com/Dotnaught/Spellerizer#readme"
+}

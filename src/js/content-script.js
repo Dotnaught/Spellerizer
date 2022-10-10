@@ -1,6 +1,5 @@
-//console.log("content-script.js loaded");
 var replamentCount = 0;
-var words = chrome.runtime.getURL("spelling_data.json");
+var words = chrome.runtime.getURL("data/spelling_data.json");
 
 function matchCase(text, source) {
   var result = "";
@@ -15,7 +14,6 @@ function matchCase(text, source) {
       result += t.toLowerCase();
     }
   }
-
   return result;
 }
 
@@ -38,9 +36,13 @@ function scanWords(str, words) {
 }
 
 async function getWords() {
-  const response = await fetch(words);
-  const data = await response.json();
-  return data;
+  try {
+    const response = await fetch(words);
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 function checkParent(parent, child) {

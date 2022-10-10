@@ -29,7 +29,6 @@ div {
       position: relative;
       text-align: center;
       text-decoration: none #000000 solid;
-      text-decoration-thickness: auto;
       width: 100%;
       max-width: 460px;
       position: relative;
@@ -101,5 +100,37 @@ div {
 @media (min-width: 768px) {
   .button-52 {
     padding: 13px 50px 13px;
+  }
+}
+
+:root {
+  /* Light mode colors */
+  --c-light-text: hsl(227, 100%, 20%);
+  --c-light-background: #fff;
+  --c-light-focus: hsl(32, 100%, 55%);
+  --c-light-interactive: hsl(327, 100%, 55%);
+
+  /* Dark mode colors */
+  --c-dark-text: #eee;
+  --c-dark-background: #121212;
+  --c-dark-focus: hsl(32, 100%, 55%);
+  --c-dark-interactive: hsl(150, 100%, 38%);
+}
+
+/* Set default theme to light theme */
+:root {
+  --c-text: var(--c-light-text);
+  --c-background: var(--c-light-background);
+  --c-focus: var(--c-light-focus);
+  --c-interactive: var(--c-light-interactive);
+}
+
+/* Override default theme with dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --c-text: var(--c-dark-text);
+    --c-background: var(--c-dark-background);
+    --c-focus: var(--c-dark-focus);
+    --c-interactive: var(--c-dark-interactive);
   }
 }
