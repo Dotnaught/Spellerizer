@@ -3,9 +3,9 @@
   "description": "__MSG_extDesc__",
   "version": "1.0",
   "manifest_version": 3,
-  "permissions": ["scripting", "tabs", "activeTab", "storage"],
+  "permissions": ["scripting", "activeTab", "storage"],
   "default_locale": "en",
-  "host_permissions": ["https://theregister.com/*"],
+  
   "background": {
     "service_worker": "js/background.js"
   },

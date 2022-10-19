@@ -18,7 +18,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 });
 
 chrome.action.onClicked.addListener((tab) => {
-  if (!tab.url.includes("chrome://")) {
+  if (!tab.url.includes("chrome://") && tab.url.includes("theregister")) {
     chrome.scripting.executeScript(
       {
         target: { tabId: tab.id },
