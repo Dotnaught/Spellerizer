@@ -30,5 +30,12 @@ chrome.action.onClicked.addListener((tab) => {
         }
       }
     );
+  } else {
+    chrome.action.setBadgeText({ text: "!", tabId: tab.id });
+    chrome.action.setBadgeBackgroundColor({ color: "#ff0000", tabId: tab.id });
+    setTimeout(() => {
+      chrome.action.setBadgeText({ text: "", tabId: tab.id });
+      chrome.action.setBadgeBackgroundColor({ color: "#0000ff", tabId: tab.id });
+    }, 1000);
   }
 });
