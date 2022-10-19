@@ -14,7 +14,7 @@ div {
 
     
     /* CSS */
-    .button-53 {
+    .tilted-button {
       background-color: #3DD1E7;
       border: 0 solid #E5E7EB;
       box-sizing: border-box;
@@ -39,11 +39,11 @@ div {
       touch-action: manipulation;
     }
     
-    .button-53:focus {
+    .tilted-button:focus {
       outline: 0;
     }
     
-    .button-53:after {
+    .tilted-button:after {
       content: '';
       position: absolute;
       border: 1px solid #000000;
@@ -53,19 +53,19 @@ div {
       height: calc(100% - 1px);
     }
     
-    .button-53:hover:after {
+    .tilted-button:hover:after {
       bottom: 2px;
       left: 2px;
     }
     
     @media (min-width: 768px) {
-      .button-53 {
+      .tilted-button {
         padding: .75rem 3rem;
         font-size: 1.25rem;
       }
     }
 
-.button-52 {
+.other-button {
   font-size: 16px;
   font-weight: 200;
   letter-spacing: 1px;
@@ -80,7 +80,7 @@ div {
   touch-action: manipulation;
 }
 
-.button-52:after {
+.other-button:after {
   content: "";
   background-color: #ffe54c;
   width: 100%;
@@ -92,13 +92,13 @@ div {
   transition: 0.2s;
 }
 
-.button-52:hover:after {
+.other-button:hover:after {
   top: 0px;
   left: 0px;
 }
 
 @media (min-width: 768px) {
-  .button-52 {
+  .other-button {
     padding: 13px 50px 13px;
   }
 }
