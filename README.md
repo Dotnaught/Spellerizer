@@ -10,7 +10,7 @@ A Chrome extension for swapping US with UK spelling on The Register.
 
 - **Stefan Van Damme's Chrome Extension Developer Template** - [stefanvd](https://github.com/stefanvd/browser-extension-starter-template/)
 
-- **Heiswayi Nrird's spelling-uk-vs-us** [heiswayi
+- **Heiswayi Nrird's spelling-uk-vs-us** - [heiswayi
 ](https://github.com/heiswayi/spelling-uk-vs-us/)
 
 ## License
