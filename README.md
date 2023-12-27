@@ -1,4 +1,4 @@
-# Spellerize
+# Spellerizer
 
 A Chrome extension for swapping US with UK spelling on The Register.
 
